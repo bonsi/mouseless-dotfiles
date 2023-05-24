@@ -13,3 +13,6 @@ ln -sf "$HOME/dotfiles/nvim/init.vim" "$HOME/.config/nvim/init.vim"
 ################################## 
 rm -rf "$HOME/.config/X11"
 ln -s "$HOME/dotfiles/X11" "$HOME/.config"
+
+rm -rf "$HOME/.xinitrc"
+ln -s "$HOME/dotfiles/xinitrc" "$HOME/.xinitrc"
