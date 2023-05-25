@@ -66,3 +66,9 @@
 - `<CTRL+SHIFT+r>`  - rename tab
 - `<CTRL+SHIFT+h>`  - move tab left
 - `<CTRL+SHIFT+l>`  - move tab right
+
+# fzf
+
+- `<CTRL+t>`    - search for a file in the current directory and subdirectories
+- `<CTRL+r>`    - search for an entry in the command history
+- `<ALT+c>`     - select a subdirectory and make it your working directory
