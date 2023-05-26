@@ -75,8 +75,98 @@
 - `<CTRL+r>`    - search for an entry in the command history
 - `<ALT+c>`     - 
 
+# Neovim
+
+- `:pwd`            - print current vim working dir
+- `:cd <new-path>`  - change the current working dir to new-path
 
 
+## Buffers
+- `:buffers` = `:ls`        - see all opened buffers
+- `:buffer <id-or-name>`    - move to the buffer using its ID or name
+- `:bnext` = `:bn`          - move to the next buffer
+- `:bprevious` = `:bp`      - move to the previous buffer
+- `:bfirst` = `:bf`         - move to the first buffer
+- `:blast` = `:bl`          - move to the last buffer
+- `<Ctrl+^>`                - switch to the alternative buffer. It's marked in your buffer list with the symbol `#`
+- `<id><Ctrl+^>`            - switch to a specific buffer with ID <id>. For example, `75<Ctrl+^>` -> switch to buffer with id 75
+- `:bufdo`                  - apply a command to all buffers
+- `:buffers!` = `:ls!`      - display unlisted buffers
+- `:badd <filename>`        - add <filename> to the buffer list
+- `:bdelete <id-or-name>`   - delete a buffer by id or name. Use spaces to specify multiple buffers
+- `:1,10bdelete`            - delete buffers 1 through 10
+- `:%bdelete`               - delete all buffers
+
+## Windows
+- `:new`            - create new window
+- `Ctrl+w s`        - split current window horizontally
+- `Ctrl+w v`        - split current window vertically
+- `Ctrl+w n`        - split the current windows horizontally and edit a new file
+- `Ctrl+w ^`        - split the current window withe the alternate file (the buffer marked with a `#` in your buffer list)
+- `<buffer-id>Ctrl+w ^` - split windows with the buffer with ID <buffer-id>. For example, `75 Ctrl-w ^` will open a window with a buffer with ID 75
+
+- `Ctrl+w <Down>` = `Ctrl+w j`  - move focus to window below
+- `Ctrl+w <Up>` = `Ctrl+w k`    - move focus to window above
+- `Ctrl+w <Left>` = `Ctrl+w h`  - move focus to window to the left
+- `Ctrl+w <Right>` = `Ctrl+w l` - move focus to window to the right
+
+- `Ctrl+w r`    - rotate windows
+- `Ctrl+w x`    - exchange the focused window with the next window
+
+- `Ctrl+w -`    - decrease window height
+- `Ctrl+w +`    - increase window height
+- `Ctrl+w <`    - decrease window width
+- `Ctrl+w >`    - increase window width
+- `Ctrl+w =`    - resize windows to the same size for them to fit on the screen
+
+- `:q`          - quit the current window
+- `:q!`         - quit the current window, even when there is an unsaved buffer
+- `:qa`         - quit all windows, add `!` to discard unsaved buffers
+
+## Tabs
+- `:tabnew` = `:tabe`   - open a new tab
+- `:tabclose` = `:tabc` - close the current tab
+- `:tabonly` = `:tabo`  - close every other tab except the current one
+- `gt`                  - go to next tab
+- `gT`                  - go to previous tab
+
+## Argument list (arglist)
+- `:args`   - display the arglist
+- `:argadd` - add file to the arglist
+- `:argdo`  - execute command on every file in the arglist
+
+- `:next`   - move to the next file in the arglist
+- `:prev`   - move to the previous file in the arglist
+- `:first`  - move the the first file in the arglist
+
+## Mapping keystrokes
+- `:nmap`       - create a new mapping in NORMAL mode
+- `:imap`       - create a new mapping in INSERT mode
+- `:xmap`       - create a new mapping in VISUAL mode
+- `:nnoremap`   - create mapping for NORMAL mode (non-recursive)
+- `:inoremap`   - create mapping for INSERT mode (non-recursive)
+- `:vnoremap`   - create mapping for VISUAL mode (non-recursive)
+
+## Jumplists
+- `Ctrl+o`  - go to the previous cursor position
+- `Ctrl+i`  - go to the next cursor position
+
+# Changelists
+- `g;`  - jump to the next change
+- `g,`  - jump to the previous change
+
+## Method jump
+- `[m`  - move to the start of a method
+- `]m`  - move to the end of a method
+
+## Repeating keystrokes
+- `.`   - repeat the last change
+- `@:`  - repeat the last command
+
+## Command window
+- `q:`          - open the command history
+- `q/` = `q?`   - open search history
+- `Ctrl+f`      - open command history while in COMMAND-LINE mode
 
 
 
