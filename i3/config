@@ -13,7 +13,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+#font pango:monospace 8
+font pango:Inconsolata NF 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -95,13 +96,20 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+
 # split in horizontal orientation
-#bindsym $mod+h split h
 bindsym $mod+CTRL+h split h
 
 # split in vertical orientation
-#bindsym $mod+v split v
 bindsym $mod+CTRL+v split v
+
+# split in horizontal orientation
+#bindsym $mod+h split h
+#bindsym $mod+Ctrl+h split h
+
+# split in vertical orientation
+#bindsym $mod+v split v
+#bindsym $mod+Ctrl+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -384,7 +392,7 @@ set $mode_display Config monitor resolution - Default config (d) - 1920x1080
 
 mode "$mode_display" {
 
-    bindsym d exec --no-startup-id sh "$HOME/.config/X11/res-1920x1080.sh", mode "default"
+    bindsym d exec --no-startup-id sh "$HOME/.config/X11/screen-1920x1080.sh", mode "default"
 
     # back to normal
     bindsym Return mode "default"
@@ -392,3 +400,11 @@ mode "$mode_display" {
 }
 
 bindsym $mod+a mode "$mode_display"
+
+################################################################################
+# Dunst
+################################################################################
+exec --no-startup-id dunst
+bindsym $mod+x exec dunstctl close-all
+bindsym Ctrl+BackSpace exec dunstctl history-pop
+

@@ -1,5 +1,6 @@
 # i3
 
+- '<CTRL+BACKSPACE>`    - show all desktop notifications
 
 - `<WIN+ENTER>`         - run URxvt
 - `<WIN+SHIFT+q>`       - close current window in focus
@@ -17,15 +18,16 @@
 - `<WIN+SHIFT+k>`                   - move window up
 - `<WIN+SHIFT+l>`                   - move window right
 
-- `<WIN+CTRL+h>` - split in horizontal orientation
-- `<WIN+CTRL+v>` - split in vertical orientation
+- `<WIN+CTRL+h>` - split in horizontal orientation - this tells i3 what to do with the next NEW window, so we need to press $mod+Enter to actually have it split
+- `<WIN+CTRL+v>` - split in vertical orientation - this tells i3 what to do with the next NEW window, so we need to press $mod+Enter to actually have it split
 
-
+- `<WIN+a>`             - Monitor resolution
 - `<WIN+d>`             - run dmenu (quicklaumcher)
 - `<WIN+e>`             - switch to split layout / toggle vertical/horizontal window layout
 - `<WIN+r>`             - resize mode (`<ESC>` to exit)
 - `<WIN+s>`             - switch to stacked layout
 - `<WIN+w>`             - switch to tabbed layout
+- `<WIN+x>`             - dismiss all desktop notifications 
 
 - `<WIN+1>`     - switch to workspace 1 / terms
 - `<WIN+2>`     - switch to workspace 2 / web
@@ -71,4 +73,14 @@
 
 - `<CTRL+t>`    - search for a file in the current directory and subdirectories
 - `<CTRL+r>`    - search for an entry in the command history
-- `<ALT+c>`     - select a subdirectory and make it your working directory
+- `<ALT+c>`     - 
+
+
+
+
+
+
+
+
+
+
