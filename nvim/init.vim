@@ -5,12 +5,14 @@ call plug#begin("$XDG_DATA_HOME/nvim/plugged")
     Plug 'simeji/winresizer'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 noremap <space> <nop>
 let mapleader = "\<space>"
 noremap <leader>bn :bn<cr> ;buffer next
 noremap <leader>tn gt ;new tab
+nnoremap <c-w>h <c-w>s
 
 let g:winresizer_start_key = "<leader>w" " default: Ctrl+e
 

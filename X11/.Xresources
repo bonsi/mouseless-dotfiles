@@ -1,3 +1,15 @@
+! Setting transparency and background                                                                                                                                       
+!URxvt*depth:      32                                                                                                                                                        
+!URxvt.background: [85]#282828  *.foreground: #C6C6C6
+!URxvt.background: [50]#282828  *.foreground: #C6C6C6
+!urxvt*fading:           10
+!urxvt*fadeColor:        #000000
+
+!URxvt.depth:32
+!URxvt.background:rgba:0000/0000/1111/dddd
+
+
+
 *.foreground: #C6C6C6
 *.background: #1C1C1C
 *.cursorColor: #444444

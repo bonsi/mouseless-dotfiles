@@ -99,7 +99,7 @@
 
 ## Windows
 - `:new`            - create new window
-- `Ctrl+w s`        - split current window horizontally
+- `Ctrl+w h`        - split current window horizontally
 - `Ctrl+w v`        - split current window vertically
 - `Ctrl+w n`        - split the current windows horizontally and edit a new file
 - `Ctrl+w ^`        - split the current window withe the alternate file (the buffer marked with a `#` in your buffer list)
@@ -168,9 +168,41 @@
 - `q/` = `q?`   - open search history
 - `Ctrl+f`      - open command history while in COMMAND-LINE mode
 
+# Tmux
+- `tmux list-sessions`
+- `tmux attach-session -t <session-id>`
+- `tmux new-session -s <session-name>`
+- `tmux kill-session -t <session-name>`
+- `tmux kill-server`                    - kill the tmux server and thus EVERY session
 
+- `Ctrl+Space`      - prefix key
+- `PREFIX r`        - reload tmux config
 
+- `PREFIX v`        - split window vertically
+- `PREFIX h`        - split window horizontally
 
+- `PREFIX Alt+ArrowKeys`    - resize panes
+
+- `Ctrl+h` - focus to pane left
+- `Ctrl+j` - focus to pane below
+- `Ctrl+k` - focus to pane above
+- `Ctrl+l` - focus to pane right 
+
+- `PREFIX n`            - rename current window
+- `PREFIX w`            - new window
+- `PREFIX <win-number>` - show window <win-number> (bottom of the screen)
+- `Alt+j`               - previous window
+- `ALt+k`               - next window
+
+## Copy mode
+- `PREFIX [`            - enter copy mode (`q` to exit) NOT SURE WHAT COPY MODE DOES?
+- `PREFIX ]`            - paste from tmux buffer
+- `Ctrl+u`              - scroll up
+- `Ctrl+d`              - scroll down
+- `/`                   - search
+
+- `v`                   - select text
+- `y`                   - yank (copy) text
 
 
 

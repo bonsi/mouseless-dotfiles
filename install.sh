@@ -41,7 +41,7 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 ################################## 
 # Dunst
 ##################################
-mkdir-p "$XDG_CONFIG_HOME/dunst"
+mkdir -p "$XDG_CONFIG_HOME/dunst"
 ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
 
 ################################## 
@@ -56,5 +56,16 @@ mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
 ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG_HOME/nvim/autoload/plug.vim"
 # Install (or update) all plugins
 nvim --noplugin +PlugUpdate +qa
+
+################################## 
+# Tmux
+##################################
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+
+
+
+
+
 
 
