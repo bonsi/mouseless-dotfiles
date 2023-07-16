@@ -1,10 +1,8 @@
 #!/bin/zsh
 
-
 compress() {
     tar cvzf $1.tar.gz $1
 }
-
 
 ftmuxp() {
     if [[ -n $TMUX ]]; then
@@ -30,3 +28,8 @@ ftmuxp() {
         tmuxp load "$ID"
     fi
 }
+
+scratchpad() {
+    "$DOTFILES/zsh/scratchpad.sh"
+}
+
